@@ -6,7 +6,7 @@ $message = $_POST['message'];
 
 $email_form = 'helpmycar@tst-dev.com';
 
-$email_subject = "New Form Submission";
+$email_subject = "Съобщение от клиент HelpMyCar.eu";
 
 $email_body = 
     "Имена: $name.\n".
