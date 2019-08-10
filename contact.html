@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Контакт</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Scada:400,700&display=swap&subset=cyrillic"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+
+    <body>
+        <header>
+            <div class="menu-toggle" id="hamburger">
+                <a href="#"> <i class="fas fa-bars"></i></a>
+            </div>
+            <div class="overlay"></div>
+            <div class="container">
+                <nav>
+                    <a href="index.html"
+                        ><img
+                            src="images/logo-sm.png"
+                            alt="help my car logo"
+                            class="brand"
+                    /></a>
+                    <span class="call_span"
+                        ><a href="tel:+359888693948" class="call blinking"
+                            >Обади ни се: 0888-69-39-48</a
+                        ></span
+                    >
+                    <ul>
+                        <li>
+                            <a
+                                href="http://www.tst-dev.com/helpmycar/index.html"
+                                >Начало</a
+                            >
+                        </li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="contact.html">Контакт</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="container">
+            <form
+                id="contact-form"
+                method="post"
+                action="contact-form-handler.php"
+            >
+                <div class="contact-form">
+                    <h1>Свържете се с нас</h1>
+                    <div class="txtb">
+                        <label for="name"
+                            >Вашите имена : <span class="red">*</span></label
+                        >
+                        <input
+                            class="form-control"
+                            type="text"
+                            name="name"
+                            value=""
+                            placeholder="Въведете вашите имена"
+                            required
+                        />
+                    </div>
+
+                    <div class="txtb">
+                        <label for="email"
+                            >Електронна поща : <span class="red">*</span></label
+                        >
+                        <input
+                            class="form-control"
+                            type="email"
+                            name="email"
+                            value=""
+                            placeholder="Въведете електронна поща"
+                            required
+                        />
+                    </div>
+
+                    <div class="txtb">
+                        <label for="telephone">Телефонен номер :</label>
+                        <input
+                            class="form-control"
+                            type="text"
+                            name="telephone"
+                            value=""
+                            placeholder="Въведете телефонен номер"
+                        />
+                    </div>
+
+                    <div class="txtb">
+                        <label for="message"
+                            >Съобщение : <span class="red">*</span></label
+                        >
+                        <textarea
+                            class="form-control"
+                            name="message"
+                            type="textarea"
+                            spellcheck="true"
+                            lang="bg"
+                            maxlength="320"
+                            rows="5"
+                            cols="64"
+                            required
+                        ></textarea>
+                    </div>
+                    <div>
+                        <input
+                            type="submit"
+                            value="Изпрати"
+                            class="form-control btn"
+                        />
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <footer>
+            <div class="foot">
+                &copy; Powered by:
+                <a href="http://tst-dev.com" target="_blank">
+                    www.TST-dev.com</a
+                >
+            </div>
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
+</html>
