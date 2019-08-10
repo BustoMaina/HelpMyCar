@@ -265,7 +265,7 @@ h1 {
 .subhead {
   font-size: 2.2rem;
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 8rem;
 }
 
 .parent {
@@ -507,7 +507,7 @@ h1 {
 }
 
 .contact-form {
-  margin: 3rem auto;
+  margin: 7rem auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 85%;
