@@ -15,12 +15,13 @@ html {
 
 a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+}
+header a {
+    color: black;
 }
 
 header {
     width: 100%;
-
     background: #00000020;
     position: relative;
     overflow: hidden;
@@ -35,19 +36,19 @@ header {
 .menu-toggle {
     margin: 2.5rem;
     text-align: right;
-
     font-size: 3rem;
     cursor: pointer;
-    z-index: 1000;
+    z-index: 10;
     display: none;
     padding: 0 0.5rem;
 }
+
 .menu-toggle a {
     color: crimson;
 }
 
 nav {
-    padding: 1rem 0 1rem 0;
+    padding: 1rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,23 +57,24 @@ nav {
     font-weight: 700;
 }
 
-.brand {
+.logo {
     width: 60px;
-
     transform: translateX(-100rem);
     animation: slideIn 0.5s forwards;
 }
+
 .call_span {
     letter-spacing: 1.5px;
     padding: 1rem 0;
-
     position: relative;
     display: inline-block;
 }
+
 .blinking {
     animation: blinkingText 5s infinite;
     animation-delay: 5s;
 }
+
 @keyframes blinkingText {
     0% {
         color: #000;
@@ -196,10 +198,11 @@ h1 {
     font-size: 3.5rem;
     margin: 2em auto 1em auto;
 }
+
 .subhead {
     font-size: 2.2rem;
     text-align: center;
-    margin-bottom: 5rem;
+    margin-bottom: 8rem;
 }
 
 .parent {
@@ -242,73 +245,23 @@ h1 {
         grid-area: 6 / 2 / 7 / 7;
     }
 }
-.div1 {
-    background-color: #000000;
-    width: 486px;
-    height: 195px;
-    border-radius: 12px;
-}
-.div2 {
-    background-color: #000000;
-    width: 486px;
-    height: 195px;
-    border-radius: 12px;
-}
-.div3 {
-    background-color: #000000;
-    width: 486px;
-    height: 195px;
-    border-radius: 12px;
-}
-.div4 {
-    background-color: #000000;
-    width: 486px;
-    height: 195px;
-    border-radius: 12px;
-}
-.div5 {
-    background-color: #000000;
-    width: 486px;
-    height: 195px;
-    border-radius: 12px;
-}
-.div6 {
-    background-color: #000000;
-    width: 486px;
-    height: 195px;
-    border-radius: 12px;
-}
-.div7 {
-    background-color: #000000;
-    width: 486px;
-    height: 195px;
-    border-radius: 12px;
-}
-.div8 {
-    background-color: #000000;
-    width: 486px;
-    height: 195px;
-    border-radius: 12px;
-}
-.div9 {
-    background-color: #000000;
-    width: 486px;
-    height: 195px;
-    border-radius: 12px;
-}
-.div10 {
-    background-color: #000000;
-    width: 486px;
-    height: 195px;
-    border-radius: 12px;
-}
+
+.div1,
+.div2,
+.div3,
+.div4,
+.div5,
+.div6,
+.div7,
+.div8,
+.div9,
+.div10,
 .div11 {
-    background-color: #000000;
+    background-color: #000;
     width: 486px;
     height: 195px;
     border-radius: 12px;
 }
-// na 1332
 
 .glossy-frame:before {
     content: "";
@@ -332,11 +285,11 @@ h1 {
 .glossy-frame {
     position: relative;
     overflow: hidden;
-    width: 486px;
     height: 195px;
     width: 100%;
     display: flex;
 }
+
 .card_pic1,
 .card_pic2,
 .card_pic3,
@@ -354,43 +307,41 @@ h1 {
     width: 35%;
     margin: 2rem;
     border-radius: 10px;
-    z-index: 2;
+    z-index: 5;
 }
 
 .card_pic1 {
-    background-image: url("../images/car1.jpg");
+    background-image: url("../images/car1.webp");
 }
-
 .card_pic2 {
-    background-image: url("../images/car2.jpg");
+    background-image: url("../images/car2.webp");
 }
-
 .card_pic3 {
-    background-image: url("../images/car3.jpg");
+    background-image: url("../images/car3.webp");
 }
 .card_pic4 {
-    background-image: url("../images/car4.jpg");
+    background-image: url("../images/car4.webp");
 }
 .card_pic5 {
-    background-image: url("../images/car5.jpg");
+    background-image: url("../images/car5.webp");
 }
 .card_pic6 {
-    background-image: url("../images/car6.jpg");
+    background-image: url("../images/car6.webp");
 }
 .card_pic7 {
-    background-image: url("../images/car7.jpg");
+    background-image: url("../images/car7.webp");
 }
 .card_pic8 {
-    background-image: url("../images/car8.jpg");
+    background-image: url("../images/car8.webp");
 }
 .card_pic9 {
-    background-image: url("../images/car9.jpg");
+    background-image: url("../images/car9.webp");
 }
 .card_pic10 {
-    background-image: url("../images/car10.jpg");
+    background-image: url("../images/car10.webp");
 }
 .card_pic11 {
-    background-image: url("../images/car11.jpg");
+    background-image: url("../images/car11.webp");
 }
 
 .card_content {
@@ -415,12 +366,76 @@ h1 {
 
 .foot {
     margin-top: 8rem;
-    padding-top: 60px;
-    font-size: 2rem;
+    padding-top: 30px;
+    font-size: 1.5rem;
     text-align: center;
-    height: 140px;
+    height: 80px;
     background: #00000020;
     width: 100%;
+}
+
+.contact-form {
+    margin: 7rem auto;
+    box-sizing: border-box;
+    width: 85%;
+    max-width: 800px;
+    background: #f1f1f1;
+    padding: 30px 40px;
+    border-radius: 8px;
+    text-align: center;
+    font-family: "Scada", sans-serif;
+}
+
+.contact-form h1 {
+    margin-top: 0;
+}
+
+.txtb {
+    border: 1px solid gray;
+    margin: 8px 0;
+    padding: 12px 18px;
+    border-radius: 8px;
+}
+
+.txtb label {
+    display: block;
+    text-align: left;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.txtb input,
+.txtb textarea {
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 18px;
+    margin-top: 6px;
+}
+
+.btn {
+    display: inline-block;
+    background: #000;
+    padding: 14px 0;
+    font-size: 2.1rem;
+    color: #ffcc00;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 8px;
+    width: 100%;
+    border-radius: 8px;
+    font-family: "Scada", sans-serif;
+}
+
+textarea {
+    font-family: "Scada", sans-serif;
+    resize: none;
+}
+
+.red {
+    color: crimson;
 }
 
 @media screen and (max-width: 1332px) {
@@ -487,6 +502,7 @@ h1 {
         display: flex;
     }
 }
+
 @media screen and (max-width: 600px) {
     html {
         font-size: 8px;
